@@ -1,5 +1,64 @@
-$main-color: blue;
+$header-font: bold 72px/120% "Garamond";
+$text-font: normal 400 18px/130% 'Cormorant Garamond';
+$main-color: white;
+$bg-color: black;
 
 body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $bg-color;
     color: $main-color;
+    font: $text-font;
+    
+}
+
+.wrapper {
+    max-width: 1296px;
+    margin: auto;
+}
+
+.header {
+    background: url("../images/background_1.png");
+    background-color: aqua;
+  }
+  
+
+.navigation_pannel {
+    margin: 0px 25px;
+    padding: 25px 25px 5px 25px;
+    height: 100px;
+    background: rgba($color: #000000, $alpha: 0.0);
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+}
+
+.main {
+    font: $text-font;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+}
+
+.nav_item_link {
+    text-decoration: none;
+    color: $main-color;
+    align-self: flex-end;
+}
+
+.nav_cross {
+    transform: scale(0.8) rotate(45deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav_instagram {
+    scale: 1.5;
 }

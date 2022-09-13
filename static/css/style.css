@@ -1,3 +1,57 @@
 body {
-  color: blue;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+  font: normal 400 18px/130% "Cormorant Garamond";
+}
+
+.wrapper {
+  max-width: 1296px;
+  margin: auto;
+}
+
+.header {
+  background: url("../images/background_1.png");
+  background-color: aqua;
+}
+
+.navigation_pannel {
+  margin: 0px 25px;
+  padding: 25px 25px 5px 25px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+}
+
+.main {
+  font: normal 400 18px/130% "Cormorant Garamond";
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+}
+
+.nav_item_link {
+  text-decoration: none;
+  color: white;
+  align-self: flex-end;
+}
+
+.nav_cross {
+  transform: scale(0.8) rotate(45deg);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav_instagram {
+  scale: 1.5;
 }

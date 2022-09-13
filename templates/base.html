@@ -7,10 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/36ed5ed2fc.js" crossorigin="anonymous"></script>
+    <title>
+    {% block title %}
+        BasePage
+    {% endblock title %}
+    </title>
 </head>
 <body>
-    asd
-    asdasddsa
+    <header class="header">
+        <div class="wrapper">
+            <nav class="navigation_pannel">
+                <ul class="nav_list">
+                    <li class="nav_item"><i class="fa-brands fa-instagram nav_instagram"></i></li>
+                    <li class="nav_item nav_item_link"><a class="nav_item_link" href="#">Главная</a></li>
+                    <li class="nav_item nav_item_link"><a class="nav_item_link" href="#">Мастера</a></li>
+                    <li class="nav_item nav_item_link"><a class="nav_item_link" href="#">Косметика</a></li>
+                    <li class="nav_item"><img src="{% static 'images/logo.svg' %}" alt="" class="nav_logo"></li>
+                    <li class="nav_item nav_item_link"><a class="nav_item_link" href="#">Акции</a></li>
+                    <li class="nav_item nav_item_link"><a class="nav_item_link" href="#">Отзывы</a></li>
+                    <li class="nav_item nav_item_link"><a class="nav_item_link" href="#">Контакты</a></li>
+                    <li class="nav_item"><img src="{% static 'images/nav_cross.svg' %}" alt="" class="nav_cross"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    {% block content %}
+      CONTENT  
+    {% endblock content %}
+        
+
+    <footer class="footer">
+        <div class="wrapper">
+
+        </div>
+    </footer>
 </body>
 </html>
